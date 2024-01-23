@@ -267,8 +267,10 @@ private:
 
 
     effect_config_t     mConfig;    // input and output audio configuration
+public:
     sp<EffectHalInterface> mEffectInterface; // Effect module HAL
     sp<EffectBufferHalInterface> mInBuffer;  // Buffers for interacting with HAL
+private:
     sp<EffectBufferHalInterface> mOutBuffer;
     status_t            mStatus;    // initialization status
                 // First handle in mHandles has highest priority and controls the effect module
